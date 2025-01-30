@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-03</title>
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- google font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +48,65 @@
 </head>
 
 <body class="">
-    
+    <!-- header section  -->
+    <header class="md:container mx-auto">
+        <!-- navbar section  -->
+
+        <nav class="navbar bg-base-100 flex mx-auto w-full justify-between lg:justify-around items-center sora">
+            <div class="flex gap-3"><img src="images/logo-header.png" alt="">
+                <h1 class=" hidden md:block text-3xl font-bold ">Browse4Pets</h1>
+            </div>
+            <div class="">
+                <ul class="hidden lg:flex justify-center items-center gap-6 font-semibold ">
+                    <li><a href="">Find a pet</a></li>
+                    <li><a href="">Breeds</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="flex items-end relative">
+                <div class="hidden lg:flex justify-center items-center gap-4">
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="btn border-btn-bg-color">Login</button>
+                    <button class="btn bg-btn-bg-color">Register</button>
+                </div>
+                <div class="dropdown lg:hidden">
+                    <div>
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- hero section  -->
+        <section class="">
+            <div class="hero  flex box-border w-full h-screen p-5 bg-right md:bg-center bg-cover bg-no-repeat" style="background-image: url(images/cat-big.png);">
+                <!-- text area  -->
+                <div class="md:w-2/3 flex flex-col gap-5">
+                    <h1 class="adlam-display text-5xl">
+                        Pamper Your Pet, Because They Deserve the Bes
+                    </h1>
+                    <p class="sora text-gray-500">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                    <button class="btn bg-btn-bg-color sora w-44">Find a pet</button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- main section  -->
+    <main class="container mx-auto">
+        <section>
+            
+        </section>
+    </main>
 </body>
 
 </html>
