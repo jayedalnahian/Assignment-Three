@@ -36,6 +36,7 @@
     <!-- tailwind and daisy UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/split-type"></script>
 
     <!-- custom style  -->
     <script>
@@ -52,6 +53,10 @@
                 },
             },
         }
+    </script>
+
+    <script>
+        let text = new SplitType('#text');
     </script>
 </head>
 
@@ -73,7 +78,7 @@
             </div>
             <div class="flex items-end relative">
                 <div class="hidden lg:flex justify-center items-center gap-4">
-                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-regular fa-bell animate-ping"></i>
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <button class="btn border-btn-bg-color">Login</button>
                     <button class="btn bg-btn-bg-color">Register</button>
@@ -90,8 +95,9 @@
                     </div>
                 </div>
             </div>
+            
         </nav>
-
+        <hr class="md:hidden">
 
 
         <!-- hero section  -->
@@ -103,9 +109,9 @@
                     <h1 class="adlam-display text-5xl">
                         Pamper Your Pet, Because They Deserve the Bes
                     </h1>
-                    <p class="sora text-gray-500">Discover a world of treats, toys, and essentials handpicked for your
-                        furry friends. Shop now and make tails wag with joy!</p>
-                    <button class="btn bg-btn-bg-color sora w-44">Find a pet</button>
+                    <p class="sora text-gray-500">Treat your pet with love, care, and the finest products, because they
+                        deserve nothing but the best!</p>
+                    <button class="btn bg-btn-bg-color sora w-44 animate-bounce text-xl">Find a pet</button>
                 </div>
             </div>
         </section>
@@ -130,7 +136,7 @@
                                 more...</button>
                         </div>
                         <div>
-                            <img src="images/mycat1.webp" class="w-full" />
+                            <img src="images/mycat1.webp" class="w-full animate-pulse" />
                         </div>
                     </div>
                     <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -151,7 +157,7 @@
                                 more...</button>
                         </div>
                         <div>
-                            <img src="images/mycat2.png" class="w-full" />
+                            <img src="images/mycat2.png" class="w-full animate-pulse" />
                         </div>
                     </div>
                     <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -173,7 +179,7 @@
                                 more...</button>
                         </div>
                         <div>
-                            <img src="images/mycat3.webp" class="w-full" />
+                            <img src="images/mycat3.webp" class="w-full animate-pulse" />
                         </div>
                     </div>
                     <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -391,9 +397,10 @@
     <!-- footer section  -->
     <footer class="grid grid-rows-4">
         <div class="h-96 md:h-60">
-        </div>       
+        </div>
         <div class="bg-footer-bg-color relative border-none">
-            <div class="p-10 rounded-xl grid grid-cols-1 md:grid-cols-5 w-10/12 border bg-white absolute -top-3/4 left-1/2 transform -translate-x-1/2">
+            <div
+                class="p-10 rounded-xl grid grid-cols-1 md:grid-cols-5 w-10/12 border bg-white absolute -top-3/4 left-1/2 transform -translate-x-1/2">
                 <div class="col-span-2">
                     <img src="images/cute-pet-mid.png" alt="">
                 </div>
@@ -405,13 +412,15 @@
                 </div>
             </div>
         </div>
-        <div class="border-none bg-footer-bg-color flex flex-col md:flex-row gap-10 justify-around sora pl-20 pr-20 pb-20 pt-10 md:items-end">
+        <div
+            class="border-none bg-footer-bg-color flex flex-col md:flex-row gap-10 justify-around sora pl-20 pr-20 pb-20 pt-10 md:items-end">
             <div class="">
                 <div class="flex items-center gap-2">
                     <img src="images/logo-footer.png" alt="">
                     <h1 class="text-3xl font-bold">Browse<span class="text-btn-bg-color">4</span>Pets</h1>
                 </div>
-                <p class="mt-4 ">Discover a world of treats, toys, and <br>essentials handpicked for your furry <br>friends</p>
+                <p class="mt-4 ">Discover a world of treats, toys, and <br>essentials handpicked for your furry
+                    <br>friends</p>
             </div>
             <div class="my-2">
                 <ul class="flex flex-col gap-4 text-xl">
